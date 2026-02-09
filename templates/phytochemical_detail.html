@@ -1,0 +1,329 @@
+{% extends "base.html" %}
+{% block content %}
+
+<div class="container mt-4">
+
+  <!-- HEADER -->
+  <div class="d-flex align-items-start justify-content-between gap-3 flex-wrap">
+    <div>
+      <h2 class="mb-1">{{ phyto.phyto_name }}</h2>
+
+      <div class="text-muted">
+        PubChem CID:
+        {% if phyto.cid %}
+          <b id="cidValue">{{ phyto.cid }}</b>
+
+          <a class="ms-2 small text-decoration-none"
+             href="https://pubchem.ncbi.nlm.nih.gov/compound/{{ phyto.cid }}"
+             target="_blank">
+            View on PubChem ↗
+          </a>
+
+          <button type="button"
+                  class="btn btn-sm btn-outline-secondary ms-2 py-0 px-2"
+                  onclick="copyCID()"
+                  title="Copy CID">
+            Copy
+          </button>
+        {% else %}
+          <b>—</b>
+        {% endif %}
+      </div>
+    </div>
+
+    <div class="d-flex gap-2">
+      <a class="btn btn-sm btn-outline-secondary"
+         href="{{ url_for('browse_phytochemicals') }}">
+        Back
+      </a>
+    </div>
+  </div>
+
+  <div class="row g-3 mt-3">
+
+    <!-- LEFT COLUMN -->
+    <div class="col-md-6">
+
+      <!-- STRUCTURES -->
+      <div class="card shadow-sm">
+        <div class="card-body">
+          <h5 class="card-title mb-2">Structures</h5>
+
+          <div class="d-flex flex-wrap gap-2">
+            {% if phyto.sdf_2d_path %}
+              <a class="btn btn-sm btn-outline-primary"
+                 href="{{ url_for('static', filename=phyto.sdf_2d_path) }}"
+                 download>
+                Download SDF (2D)
+              </a>
+            {% else %}
+              <span class="badge bg-light text-dark border">SDF (2D): not available</span>
+            {% endif %}
+
+            {% if phyto.sdf_3d_path %}
+              <a class="btn btn-sm btn-outline-primary"
+                 href="{{ url_for('static', filename=phyto.sdf_3d_path) }}"
+                 download>
+                Download SDF (3D)
+              </a>
+            {% else %}
+              <span class="badge bg-light text-dark border">SDF (3D): not available</span>
+            {% endif %}
+          </div>
+
+          <!-- PNG PREVIEW -->
+          <div class="mt-3">
+            {% if phyto.png_2d_path %}
+              <div class="text-muted mb-2">2D depiction:</div>
+              <div class="border rounded p-2 bg-white text-center">
+                <img src="{{ url_for('static', filename=phyto.png_2d_path) }}"
+                     class="img-fluid"
+                     alt="2D structure"
+                     style="max-height: 280px;" />
+              </div>
+
+              <div class="mt-2">
+                <a class="small text-decoration-none"
+                   href="{{ url_for('static', filename=phyto.png_2d_path) }}"
+                   download>
+                  Download 2D image (PNG)
+                </a>
+              </div>
+            {% else %}
+              <div class="text-muted">2D image not available yet.</div>
+            {% endif %}
+          </div>
+
+          <!-- AVAILABILITY -->
+          <div class="mt-3">
+            <small class="text-muted">
+              Availability:
+              2D SDF:
+              {% if phyto.has_2d %}<b class="text-success">Yes</b>{% else %}<b class="text-danger">No</b>{% endif %}
+              &nbsp;|&nbsp;
+              3D SDF:
+              {% if phyto.has_3d %}<b class="text-success">Yes</b>{% else %}<b class="text-danger">No</b>{% endif %}
+            </small>
+          </div>
+        </div>
+      </div>
+
+      <!-- CHEMICAL FORMATS (FIRST) -->
+      <div class="card shadow-sm mt-3">
+        <div class="card-body">
+          <h5 class="card-title mb-2">Chemical Formats</h5>
+
+          {% set canonical = phyto.smiles or phyto.CanonicalSMILES %}
+          {% set isomeric = phyto.isomeric_smiles or phyto.IsomericSMILES %}
+          {% set inchikey = phyto.inchikey or phyto.InChIKey %}
+          {% set inchi = phyto.inchi or phyto.InChI %}
+          {% set iupac = phyto.iupac_name or phyto.IUPACName %}
+
+          <div class="mb-3">
+            <div class="text-muted small">IUPAC Name</div>
+            <div class="small text-break"><b>{{ iupac or "—" }}</b></div>
+          </div>
+
+          <div class="mb-3">
+            <div class="text-muted small">Canonical SMILES</div>
+            <div class="font-monospace small text-break">{{ canonical or "—" }}</div>
+          </div>
+
+          <div class="mb-3">
+            <div class="text-muted small">Isomeric SMILES</div>
+            <div class="font-monospace small text-break">{{ isomeric or "—" }}</div>
+          </div>
+
+          <div class="mb-3">
+            <div class="text-muted small">InChIKey</div>
+            <div class="font-monospace small text-break">{{ inchikey or "—" }}</div>
+          </div>
+
+          <div>
+            <div class="text-muted small">InChI</div>
+            <div class="font-monospace small text-break">{{ inchi or "—" }}</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- MOLECULAR DESCRIPTORS (SECOND) -->
+      <div class="card shadow-sm mt-3">
+        <div class="card-body">
+          <h5 class="card-title mb-2">Molecular Descriptors</h5>
+
+          {% if phyto.molecular_weight is not none %}
+            <div class="row g-3 mt-1">
+
+              <div class="col-6">
+                <div class="text-muted small">Molecular Formula</div>
+                <div><b>{{ phyto.molecular_formula or "—" }}</b></div>
+              </div>
+
+              <div class="col-6">
+                <div class="text-muted small">Molecular Weight</div>
+                <div><b>{{ "%.3f"|format(phyto.molecular_weight) }}</b></div>
+              </div>
+
+              <div class="col-6">
+                <div class="text-muted small">XlogP</div>
+                <div><b>{{ phyto.xlogp if phyto.xlogp is not none else "—" }}</b></div>
+              </div>
+
+              <div class="col-6">
+                <div class="text-muted small">TPSA</div>
+                <div><b>{{ phyto.tpsa if phyto.tpsa is not none else "—" }}</b></div>
+              </div>
+
+              <div class="col-6">
+                <div class="text-muted small">H-bond Donors (HBD)</div>
+                <div><b>{{ phyto.hbd if phyto.hbd is not none else "—" }}</b></div>
+              </div>
+
+              <div class="col-6">
+                <div class="text-muted small">H-bond Acceptors (HBA)</div>
+                <div><b>{{ phyto.hba if phyto.hba is not none else "—" }}</b></div>
+              </div>
+
+              <div class="col-6">
+                <div class="text-muted small">Rotatable Bonds</div>
+                <div><b>{{ phyto.rotatable_bonds if phyto.rotatable_bonds is not none else "—" }}</b></div>
+              </div>
+
+              <div class="col-6">
+                <div class="text-muted small">Heavy Atom Count</div>
+                <div><b>{{ phyto.heavy_atom_count if phyto.heavy_atom_count is not none else "—" }}</b></div>
+              </div>
+
+              <div class="col-6">
+                <div class="text-muted small">Complexity</div>
+                <div><b>{{ phyto.complexity if phyto.complexity is not none else "—" }}</b></div>
+              </div>
+
+              <div class="col-6">
+                <div class="text-muted small">Charge</div>
+                <div><b>{{ phyto.charge if phyto.charge is not none else "—" }}</b></div>
+              </div>
+
+            </div>
+
+            <div class="mt-3">
+              <small class="text-muted">Source: PubChem (CID-based properties).</small>
+            </div>
+          {% else %}
+            <div class="text-muted">
+              Descriptors not available yet.
+              {% if phyto.cid %}
+                (They will be fetched automatically from PubChem.)
+              {% else %}
+                (CID required.)
+              {% endif %}
+            </div>
+          {% endif %}
+        </div>
+      </div>
+
+      <!-- ADMET / DRUG-LIKENESS (THIRD) -->
+      <div class="card shadow-sm mt-3">
+        <div class="card-body">
+          <h5 class="card-title mb-2">ADMET / Drug-likeness</h5>
+
+          {% if phyto.molecular_weight is not none and drug_rules %}
+            <div class="table-responsive">
+              <table class="table table-sm align-middle mb-0">
+                <thead>
+                  <tr>
+                    <th>Rule</th>
+                    <th style="width:110px;">Status</th>
+                    <th>Notes</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  {% for rule_name, r in drug_rules.items() %}
+                    <tr>
+                      <td>
+                        <b>{{ rule_name }}</b><br>
+                        <small class="text-muted">{{ r.note }}</small>
+                      </td>
+                      <td>
+                        {% if r.pass %}
+                          <span class="badge bg-success">PASS</span>
+                        {% else %}
+                          <span class="badge bg-danger">FAIL</span>
+                        {% endif %}
+                      </td>
+                      <td>
+                        {% if r.pass %}
+                          <span class="text-muted">All parameters within limits.</span>
+                        {% else %}
+                          <div>
+                            <b>{{ r.fail_count }}</b> parameter(s) out of range:
+                            <ul class="mb-0">
+                              {% for f in r.fails %}
+                                <li><code>{{ f }}</code></li>
+                              {% endfor %}
+                            </ul>
+                          </div>
+                        {% endif %}
+                      </td>
+                    </tr>
+                  {% endfor %}
+                </tbody>
+              </table>
+            </div>
+
+            <div class="mt-2">
+              <small class="text-muted">
+                These filters are heuristic screening rules (not absolute).
+              </small>
+            </div>
+          {% else %}
+            <div class="text-muted">
+              ADMET/drug-likeness cannot be evaluated yet (descriptors missing).
+            </div>
+          {% endif %}
+        </div>
+      </div>
+
+    </div>
+
+    <!-- RIGHT COLUMN -->
+    <div class="col-md-6">
+      <div class="card shadow-sm h-100">
+        <div class="card-body">
+          <h5 class="card-title">Found in Spices</h5>
+
+          {% if spices %}
+            <ul class="list-group list-group-flush mt-2">
+              {% for s in spices %}
+                <li class="list-group-item d-flex justify-content-between align-items-center">
+                  <span>{{ s.spice_name }}</span>
+                  <a href="{{ url_for('spice_detail', spice_id=s.spice_id) }}"
+                     class="btn btn-sm btn-outline-primary">
+                    Open
+                  </a>
+                </li>
+              {% endfor %}
+            </ul>
+          {% else %}
+            <div class="text-muted">No spice mappings found.</div>
+          {% endif %}
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<script>
+  function copyCID() {
+    const el = document.getElementById("cidValue");
+    if (!el) return;
+
+    const text = el.textContent.trim();
+    navigator.clipboard.writeText(text).then(() => {
+      alert("CID copied: " + text);
+    });
+  }
+</script>
+
+{% endblock %}

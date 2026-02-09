@@ -1,0 +1,195 @@
+{% extends "base.html" %}
+{% block content %}
+
+<div class="container py-4">
+
+  <!-- HERO -->
+  <div class="row align-items-center g-4">
+    <div class="col-lg-7">
+      <div class="badge text-bg-light border mb-2 px-3 py-2">
+        🌿 Spices Database • Phytochemicals • PubChem-linked
+      </div>
+
+      <h1 class="display-6 fw-bold mb-3">
+        Explore Spices & Phytochemicals
+      </h1>
+
+      <p class="lead text-muted mb-4" style="max-width: 60ch;">
+        A curated database of spices, their phytochemicals, structures (2D/3D),
+        molecular descriptors, and computational drug-likeness screening.
+      </p>
+
+      <div class="d-flex gap-2 flex-wrap">
+        <a href="{{ url_for('browse_spices') }}" class="btn btn-primary btn-lg px-4">
+          Browse Spices
+        </a>
+        <a href="{{ url_for('browse_phytochemicals') }}" class="btn btn-outline-primary btn-lg px-4">
+          Browse Phytochemicals
+        </a>
+      </div>
+
+      <div class="mt-4 d-flex gap-3 flex-wrap text-muted small">
+        <div class="d-flex align-items-center gap-2">
+          <span class="badge rounded-pill text-bg-success">Live</span>
+          PubChem structures fetched on-demand
+        </div>
+        <div class="d-flex align-items-center gap-2">
+          <span class="badge rounded-pill text-bg-secondary">Fast</span>
+          Search + filters + pagination
+        </div>
+      </div>
+    </div>
+
+    <!-- Stats card -->
+    <div class="col-lg-5">
+      <div class="card shadow-sm border-0">
+        <div class="card-body p-4">
+          <h5 class="card-title mb-3">Database Snapshot</h5>
+
+          <div class="row g-3">
+            <div class="col-6">
+              <div class="p-3 rounded bg-light border">
+                <div class="text-muted small">Spices</div>
+                <div class="fs-3 fw-bold">{{ counts.spices }}</div>
+              </div>
+            </div>
+
+            <div class="col-6">
+              <div class="p-3 rounded bg-light border">
+                <div class="text-muted small">Phytochemicals</div>
+                <div class="fs-3 fw-bold">{{ counts.phytochemicals }}</div>
+              </div>
+            </div>
+
+            <div class="col-12">
+              <div class="p-3 rounded bg-light border">
+                <div class="text-muted small">Spice–Phytochemical Links</div>
+                <div class="fs-3 fw-bold">{{ counts.links }}</div>
+              </div>
+            </div>
+          </div>
+
+          <hr class="my-4">
+
+          <div class="text-muted small mb-2">Quick actions</div>
+          <div class="d-flex gap-2 flex-wrap">
+            <a href="{{ url_for('browse_spices') }}" class="btn btn-sm btn-outline-secondary">
+              Spices
+            </a>
+            <a href="{{ url_for('browse_phytochemicals') }}" class="btn btn-sm btn-outline-secondary">
+              Phytochemicals
+            </a>
+            <a href="{{ url_for('browse_phytochemicals', only_3d=1) }}" class="btn btn-sm btn-outline-secondary">
+              Only 3D
+            </a>
+            <a href="{{ url_for('browse_phytochemicals', only_cid=1) }}" class="btn btn-sm btn-outline-secondary">
+              With CID
+            </a>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- FEATURES -->
+  <div class="row g-3 mt-4">
+
+    <div class="col-md-4">
+      <div class="card shadow-sm h-100">
+        <div class="card-body p-4">
+          <div class="fs-2 mb-2">🔍</div>
+          <h5 class="card-title">Fast Search</h5>
+          <p class="text-muted mb-0">
+            Live search for spices and phytochemicals. Filter by CID, 2D-only, 3D-only,
+            and sort by relevance.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-4">
+      <div class="card shadow-sm h-100">
+        <div class="card-body p-4">
+          <div class="fs-2 mb-2">🧪</div>
+          <h5 class="card-title">Chemical Detail</h5>
+          <p class="text-muted mb-0">
+            PubChem-linked phytochemical pages with SMILES, InChIKey, IUPAC,
+            structures, descriptors, and property panels.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-4">
+      <div class="card shadow-sm h-100">
+        <div class="card-body p-4">
+          <div class="fs-2 mb-2">📊</div>
+          <h5 class="card-title">Drug-likeness</h5>
+          <p class="text-muted mb-0">
+            Computational screening using Lipinski, Veber, Ghose, Egan and Muegge filters
+            to prioritize candidates quickly.
+          </p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+
+  <!-- HOW IT WORKS -->
+  <div class="card shadow-sm mt-4">
+    <div class="card-body p-4">
+      <h4 class="mb-3">How it works</h4>
+
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="d-flex gap-3">
+            <div class="fw-bold fs-4">1</div>
+            <div>
+              <div class="fw-semibold">Browse</div>
+              <div class="text-muted small">
+                Search spices or phytochemicals using filters and pagination.
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="d-flex gap-3">
+            <div class="fw-bold fs-4">2</div>
+            <div>
+              <div class="fw-semibold">Open a compound</div>
+              <div class="text-muted small">
+                Structures and descriptors load automatically using PubChem CID.
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="d-flex gap-3">
+            <div class="fw-bold fs-4">3</div>
+            <div>
+              <div class="fw-semibold">Evaluate</div>
+              <div class="text-muted small">
+                Check descriptors and drug-likeness rules for quick screening.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+
+  <!-- FOOTER NOTE -->
+  <div class="text-center text-muted small mt-4">
+    Built with Flask + SQLite • Structure and descriptors fetched from PubChem on-demand.
+  </div>
+
+</div>
+
+{% endblock %}

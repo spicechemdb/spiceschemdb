@@ -1,0 +1,45 @@
+{#
+  Pagination partial.
+  Expects: page, per_page, total, base_qs
+#}
+
+{% set total_pages = (total // per_page) + (1 if (total % per_page) else 0) %}
+
+{% if total_pages > 1 %}
+<nav aria-label="Pagination">
+  <ul class="pagination justify-content-center flex-wrap">
+
+    <!-- Prev -->
+    <li class="page-item {% if page <= 1 %}disabled{% endif %}">
+      {% if page > 1 %}
+        <a class="page-link"
+           href="{{ request.path }}?{{ base_qs }}{{ '&' if base_qs else '' }}page={{ page-1 }}">Prev</a>
+      {% else %}
+        <span class="page-link">Prev</span>
+      {% endif %}
+    </li>
+
+    <!-- Window pages -->
+    {% set start = 1 if page-3 < 1 else page-3 %}
+    {% set end = total_pages if page+3 > total_pages else page+3 %}
+
+    {% for p in range(start, end+1) %}
+      <li class="page-item {% if p == page %}active{% endif %}">
+        <a class="page-link"
+           href="{{ request.path }}?{{ base_qs }}{{ '&' if base_qs else '' }}page={{ p }}">{{ p }}</a>
+      </li>
+    {% endfor %}
+
+    <!-- Next -->
+    <li class="page-item {% if page >= total_pages %}disabled{% endif %}">
+      {% if page < total_pages %}
+        <a class="page-link"
+           href="{{ request.path }}?{{ base_qs }}{{ '&' if base_qs else '' }}page={{ page+1 }}">Next</a>
+      {% else %}
+        <span class="page-link">Next</span>
+      {% endif %}
+    </li>
+
+  </ul>
+</nav>
+{% endif %}

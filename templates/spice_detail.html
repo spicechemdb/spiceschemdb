@@ -1,0 +1,43 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="container mt-4">
+  <div class="d-flex align-items-start justify-content-between gap-3 flex-wrap">
+    <div>
+      <h2 class="mb-1">{{ spice.spice_name }}</h2>
+      <div class="text-muted">Botanical: <b>{{ spice.botanical_name or "—" }}</b></div>
+      <div class="text-muted mt-1">Total phytochemicals: <b>{{ phytochemicals|length }}</b></div>
+    </div>
+    <div>
+      <a href="{{ url_for('browse_spices') }}" class="btn btn-outline-secondary btn-sm">&larr; Back to Browse</a>
+    </div>
+  </div>
+
+  <div class="mt-4">
+    <table class="table table-hover">
+      <thead>
+        <tr>
+          <th>Phytochemical</th>
+          <th>CID</th>
+          <th>2D</th>
+          <th>3D</th>
+          <th class="text-end">Action</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for p in phytochemicals %}
+        <tr>
+          <td><b>{{ p.phyto_name }}</b></td>
+          <td>{{ p.cid or "—" }}</td>
+	  <td>{% if p.has_2d or p.has_3d %}✅{% else %}—{% endif %}</td>
+	  <td>{% if p.has_3d %}✅{% else %}—{% endif %}</td>
+          <td class="text-end">
+            <a class="btn btn-sm btn-outline-primary" href="{{ url_for('phytochemical_detail', phyto_id=p.phyto_id) }}">Open</a>
+          </td>
+        </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  </div>
+</div>
+{% endblock %}

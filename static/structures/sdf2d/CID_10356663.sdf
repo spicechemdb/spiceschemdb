@@ -1,0 +1,195 @@
+10356663
+  -OEChem-01202622362D
+
+ 34 36  0     0  0  0  0  0  0999 V2000
+    4.9889    0.3765    0.0000 S   0  0  0  0  0  0  0  0  0  0  0  0
+    5.9395    0.6872    0.0000 O   0  0  0  0  0  0  0  0  0  0  0  0
+    4.0384    0.0659    0.0000 O   0  0  0  0  0  0  0  0  0  0  0  0
+    4.6783    1.3270    0.0000 N   0  0  0  0  0  0  0  0  0  0  0  0
+    6.2316   -3.4256    0.0000 N   0  0  0  0  0  0  0  0  0  0  0  0
+    3.7321    1.6318    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    3.7321    2.6318    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    4.6783    2.9365    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    5.2619    2.1318    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    5.2996   -0.5740    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    2.8660    1.1318    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    2.8660    3.1318    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    4.9889    3.8870    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    2.0000    1.6318    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    2.0000    2.6318    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    4.6318   -1.3183    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    6.2781   -0.7802    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    4.9424   -2.2688    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    6.5888   -1.7307    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    5.9209   -2.4750    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    5.8819    2.1318    0.0000 H   0  0  0  0  0  0  0  0  0  0  0  0
+    2.8660    0.5118    0.0000 H   0  0  0  0  0  0  0  0  0  0  0  0
+    2.8660    3.7518    0.0000 H   0  0  0  0  0  0  0  0  0  0  0  0
+    5.5783    3.6944    0.0000 H   0  0  0  0  0  0  0  0  0  0  0  0
+    5.1815    4.4764    0.0000 H   0  0  0  0  0  0  0  0  0  0  0  0
+    4.3996    4.0796    0.0000 H   0  0  0  0  0  0  0  0  0  0  0  0
+    1.4631    1.3218    0.0000 H   0  0  0  0  0  0  0  0  0  0  0  0
+    1.4631    2.9418    0.0000 H   0  0  0  0  0  0  0  0  0  0  0  0
+    4.0251   -1.1904    0.0000 H   0  0  0  0  0  0  0  0  0  0  0  0
+    6.6922   -0.3188    0.0000 H   0  0  0  0  0  0  0  0  0  0  0  0
+    4.5284   -2.7303    0.0000 H   0  0  0  0  0  0  0  0  0  0  0  0
+    7.1954   -1.8586    0.0000 H   0  0  0  0  0  0  0  0  0  0  0  0
+    6.8383   -3.5534    0.0000 H   0  0  0  0  0  0  0  0  0  0  0  0
+    5.8175   -3.8870    0.0000 H   0  0  0  0  0  0  0  0  0  0  0  0
+  1  2  2  0  0  0  0
+  1  3  2  0  0  0  0
+  1  4  1  0  0  0  0
+  1 10  1  0  0  0  0
+  4  6  1  0  0  0  0
+  4  9  1  0  0  0  0
+  5 20  1  0  0  0  0
+  5 33  1  0  0  0  0
+  5 34  1  0  0  0  0
+  6  7  1  0  0  0  0
+  6 11  2  0  0  0  0
+  7  8  1  0  0  0  0
+  7 12  2  0  0  0  0
+  8  9  2  0  0  0  0
+  8 13  1  0  0  0  0
+  9 21  1  0  0  0  0
+ 10 16  2  0  0  0  0
+ 10 17  1  0  0  0  0
+ 11 14  1  0  0  0  0
+ 11 22  1  0  0  0  0
+ 12 15  1  0  0  0  0
+ 12 23  1  0  0  0  0
+ 13 24  1  0  0  0  0
+ 13 25  1  0  0  0  0
+ 13 26  1  0  0  0  0
+ 14 15  2  0  0  0  0
+ 14 27  1  0  0  0  0
+ 15 28  1  0  0  0  0
+ 16 18  1  0  0  0  0
+ 16 29  1  0  0  0  0
+ 17 19  2  0  0  0  0
+ 17 30  1  0  0  0  0
+ 18 20  2  0  0  0  0
+ 18 31  1  0  0  0  0
+ 19 20  1  0  0  0  0
+ 19 32  1  0  0  0  0
+M  END
+> <PUBCHEM_COMPOUND_CID>
+10356663
+
+> <PUBCHEM_COMPOUND_CANONICALIZED>
+1
+
+> <PUBCHEM_CACTVS_COMPLEXITY>
+437
+
+> <PUBCHEM_CACTVS_HBOND_ACCEPTOR>
+3
+
+> <PUBCHEM_CACTVS_HBOND_DONOR>
+1
+
+> <PUBCHEM_CACTVS_ROTATABLE_BOND>
+2
+
+> <PUBCHEM_CACTVS_SUBSKEYS>
+AAADccBzMABAAAAAAAAAAAAAAAAAAWAAAAAwYAAAAAAAAFgB9AAAHAQQQAAADAjBXgQ+wfJIEAKgAzRnRHDCgDAxAiAI2Dg4ZJgIIOLAkZGEIAhgkADIyAcQgMAOgAQAAAACAAAACAAAAAQAAAAAAAAAAA==
+
+> <PUBCHEM_IUPAC_OPENEYE_NAME>
+4-(3-methylindol-1-yl)sulfonylaniline
+
+> <PUBCHEM_IUPAC_CAS_NAME>
+4-[(3-methyl-1-indolyl)sulfonyl]aniline
+
+> <PUBCHEM_IUPAC_NAME_MARKUP>
+4-(3-methylindol-1-yl)sulfonylaniline
+
+> <PUBCHEM_IUPAC_NAME>
+4-(3-methylindol-1-yl)sulfonylaniline
+
+> <PUBCHEM_IUPAC_SYSTEMATIC_NAME>
+4-(3-methylindol-1-yl)sulfonylaniline
+
+> <PUBCHEM_IUPAC_TRADITIONAL_NAME>
+[4-(3-methylindol-1-yl)sulfonylphenyl]amine
+
+> <PUBCHEM_IUPAC_INCHI>
+InChI=1S/C15H14N2O2S/c1-11-10-17(15-5-3-2-4-14(11)15)20(18,19)13-8-6-12(16)7-9-13/h2-10H,16H2,1H3
+
+> <PUBCHEM_IUPAC_INCHIKEY>
+ZNRJXSHXWJKTGJ-UHFFFAOYSA-N
+
+> <PUBCHEM_XLOGP3_AA>
+2.9
+
+> <PUBCHEM_EXACT_MASS>
+286.07759887
+
+> <PUBCHEM_MOLECULAR_FORMULA>
+C15H14N2O2S
+
+> <PUBCHEM_MOLECULAR_WEIGHT>
+286.4
+
+> <PUBCHEM_SMILES>
+CC1=CN(C2=CC=CC=C12)S(=O)(=O)C3=CC=C(C=C3)N
+
+> <PUBCHEM_CONNECTIVITY_SMILES>
+CC1=CN(C2=CC=CC=C12)S(=O)(=O)C3=CC=C(C=C3)N
+
+> <PUBCHEM_CACTVS_TPSA>
+73.5
+
+> <PUBCHEM_MONOISOTOPIC_WEIGHT>
+286.07759887
+
+> <PUBCHEM_TOTAL_CHARGE>
+0
+
+> <PUBCHEM_HEAVY_ATOM_COUNT>
+20
+
+> <PUBCHEM_ATOM_DEF_STEREO_COUNT>
+0
+
+> <PUBCHEM_ATOM_UDEF_STEREO_COUNT>
+0
+
+> <PUBCHEM_BOND_DEF_STEREO_COUNT>
+0
+
+> <PUBCHEM_BOND_UDEF_STEREO_COUNT>
+0
+
+> <PUBCHEM_ISOTOPIC_ATOM_COUNT>
+0
+
+> <PUBCHEM_COMPONENT_COUNT>
+1
+
+> <PUBCHEM_CACTVS_TAUTO_COUNT>
+-1
+
+> <PUBCHEM_COORDINATE_TYPE>
+1
+5
+255
+
+> <PUBCHEM_BONDANNOTATIONS>
+10  16  8
+10  17  8
+11  14  8
+12  15  8
+14  15  8
+16  18  8
+17  19  8
+18  20  8
+19  20  8
+4  6  8
+4  9  8
+6  11  8
+6  7  8
+7  12  8
+7  8  8
+8  9  8
+
+$$$$

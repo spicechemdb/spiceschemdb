@@ -1,0 +1,187 @@
+3080691
+  -OEChem-01202622272D
+
+ 36 36  0     0  0  0  0  0  0999 V2000
+    2.5369    0.9050    0.0000 O   0  0  0  0  0  0  0  0  0  0  0  0
+    6.8671   -3.5950    0.0000 O   0  0  0  0  0  0  0  0  0  0  0  0
+    6.0010   -1.0950    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    5.1350   -0.5950    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    4.2690    0.9050    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    6.0010   -2.0950    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    5.1350    0.4050    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    4.2690    1.9050    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    4.2690   -1.0950    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    3.4030    0.4050    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    3.4030   -0.5950    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    6.8671   -2.5950    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    5.1350    2.4050    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    5.1350    3.4050    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    6.0010    3.9050    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    4.2690    3.9050    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    6.6116   -1.2027    0.0000 H   0  0  0  0  0  0  0  0  0  0  0  0
+    6.2131   -0.5124    0.0000 H   0  0  0  0  0  0  0  0  0  0  0  0
+    5.3905   -1.9873    0.0000 H   0  0  0  0  0  0  0  0  0  0  0  0
+    5.7890   -2.6776    0.0000 H   0  0  0  0  0  0  0  0  0  0  0  0
+    5.6720    0.7150    0.0000 H   0  0  0  0  0  0  0  0  0  0  0  0
+    4.0569    2.4876    0.0000 H   0  0  0  0  0  0  0  0  0  0  0  0
+    3.6584    1.7973    0.0000 H   0  0  0  0  0  0  0  0  0  0  0  0
+    4.2690   -1.7150    0.0000 H   0  0  0  0  0  0  0  0  0  0  0  0
+    2.8660   -0.9050    0.0000 H   0  0  0  0  0  0  0  0  0  0  0  0
+    7.4776   -2.7027    0.0000 H   0  0  0  0  0  0  0  0  0  0  0  0
+    7.0791   -2.0124    0.0000 H   0  0  0  0  0  0  0  0  0  0  0  0
+    5.6720    2.0950    0.0000 H   0  0  0  0  0  0  0  0  0  0  0  0
+    6.3110    3.3681    0.0000 H   0  0  0  0  0  0  0  0  0  0  0  0
+    6.5380    4.2150    0.0000 H   0  0  0  0  0  0  0  0  0  0  0  0
+    5.6910    4.4419    0.0000 H   0  0  0  0  0  0  0  0  0  0  0  0
+    4.5790    4.4419    0.0000 H   0  0  0  0  0  0  0  0  0  0  0  0
+    3.7321    4.2150    0.0000 H   0  0  0  0  0  0  0  0  0  0  0  0
+    3.9590    3.3681    0.0000 H   0  0  0  0  0  0  0  0  0  0  0  0
+    2.0000    0.5950    0.0000 H   0  0  0  0  0  0  0  0  0  0  0  0
+    7.4040   -3.9050    0.0000 H   0  0  0  0  0  0  0  0  0  0  0  0
+  1 10  1  0  0  0  0
+  1 35  1  0  0  0  0
+  2 12  1  0  0  0  0
+  2 36  1  0  0  0  0
+  3  4  1  0  0  0  0
+  3  6  1  0  0  0  0
+  3 17  1  0  0  0  0
+  3 18  1  0  0  0  0
+  4  7  2  0  0  0  0
+  4  9  1  0  0  0  0
+  5  7  1  0  0  0  0
+  5  8  1  0  0  0  0
+  5 10  2  0  0  0  0
+  6 12  1  0  0  0  0
+  6 19  1  0  0  0  0
+  6 20  1  0  0  0  0
+  7 21  1  0  0  0  0
+  8 13  1  0  0  0  0
+  8 22  1  0  0  0  0
+  8 23  1  0  0  0  0
+  9 11  2  0  0  0  0
+  9 24  1  0  0  0  0
+ 10 11  1  0  0  0  0
+ 11 25  1  0  0  0  0
+ 12 26  1  0  0  0  0
+ 12 27  1  0  0  0  0
+ 13 14  2  0  0  0  0
+ 13 28  1  0  0  0  0
+ 14 15  1  0  0  0  0
+ 14 16  1  0  0  0  0
+ 15 29  1  0  0  0  0
+ 15 30  1  0  0  0  0
+ 15 31  1  0  0  0  0
+ 16 32  1  0  0  0  0
+ 16 33  1  0  0  0  0
+ 16 34  1  0  0  0  0
+M  END
+> <PUBCHEM_COMPOUND_CID>
+3080691
+
+> <PUBCHEM_COMPOUND_CANONICALIZED>
+1
+
+> <PUBCHEM_CACTVS_COMPLEXITY>
+219
+
+> <PUBCHEM_CACTVS_HBOND_ACCEPTOR>
+2
+
+> <PUBCHEM_CACTVS_HBOND_DONOR>
+2
+
+> <PUBCHEM_CACTVS_ROTATABLE_BOND>
+5
+
+> <PUBCHEM_CACTVS_SUBSKEYS>
+AAADceBwMAAAAAAAAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAABAAAAGgAACAAADASgmAIyBoAAAgCAAiBCAAACAAAgIAAIiAAGCIgINiKCERKAcAAkwBEImAeAwOAOIAACAAAIAABAAAQAABAAAAAAAAAAAA==
+
+> <PUBCHEM_IUPAC_OPENEYE_NAME>
+4-(3-hydroxypropyl)-2-(3-methylbut-2-enyl)phenol
+
+> <PUBCHEM_IUPAC_CAS_NAME>
+4-(3-hydroxypropyl)-2-(3-methylbut-2-enyl)phenol
+
+> <PUBCHEM_IUPAC_NAME_MARKUP>
+4-(3-hydroxypropyl)-2-(3-methylbut-2-enyl)phenol
+
+> <PUBCHEM_IUPAC_NAME>
+4-(3-hydroxypropyl)-2-(3-methylbut-2-enyl)phenol
+
+> <PUBCHEM_IUPAC_SYSTEMATIC_NAME>
+2-(3-methylbut-2-enyl)-4-(3-oxidanylpropyl)phenol
+
+> <PUBCHEM_IUPAC_TRADITIONAL_NAME>
+4-(3-hydroxypropyl)-2-(3-methylbut-2-enyl)phenol
+
+> <PUBCHEM_IUPAC_INCHI>
+InChI=1S/C14H20O2/c1-11(2)5-7-13-10-12(4-3-9-15)6-8-14(13)16/h5-6,8,10,15-16H,3-4,7,9H2,1-2H3
+
+> <PUBCHEM_IUPAC_INCHIKEY>
+WNGXJKHDIYTXOF-UHFFFAOYSA-N
+
+> <PUBCHEM_XLOGP3_AA>
+3.4
+
+> <PUBCHEM_EXACT_MASS>
+220.146329876
+
+> <PUBCHEM_MOLECULAR_FORMULA>
+C14H20O2
+
+> <PUBCHEM_MOLECULAR_WEIGHT>
+220.31
+
+> <PUBCHEM_SMILES>
+CC(=CCC1=C(C=CC(=C1)CCCO)O)C
+
+> <PUBCHEM_CONNECTIVITY_SMILES>
+CC(=CCC1=C(C=CC(=C1)CCCO)O)C
+
+> <PUBCHEM_CACTVS_TPSA>
+40.5
+
+> <PUBCHEM_MONOISOTOPIC_WEIGHT>
+220.146329876
+
+> <PUBCHEM_TOTAL_CHARGE>
+0
+
+> <PUBCHEM_HEAVY_ATOM_COUNT>
+16
+
+> <PUBCHEM_ATOM_DEF_STEREO_COUNT>
+0
+
+> <PUBCHEM_ATOM_UDEF_STEREO_COUNT>
+0
+
+> <PUBCHEM_BOND_DEF_STEREO_COUNT>
+0
+
+> <PUBCHEM_BOND_UDEF_STEREO_COUNT>
+0
+
+> <PUBCHEM_ISOTOPIC_ATOM_COUNT>
+0
+
+> <PUBCHEM_COMPONENT_COUNT>
+1
+
+> <PUBCHEM_CACTVS_TAUTO_COUNT>
+-1
+
+> <PUBCHEM_COORDINATE_TYPE>
+1
+5
+255
+
+> <PUBCHEM_BONDANNOTATIONS>
+10  11  8
+4  7  8
+4  9  8
+5  10  8
+5  7  8
+9  11  8
+
+$$$$

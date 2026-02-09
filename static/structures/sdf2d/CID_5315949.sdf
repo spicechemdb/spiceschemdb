@@ -1,0 +1,192 @@
+5315949
+  -OEChem-01202622322D
+
+ 33 35  0     0  0  0  0  0  0999 V2000
+    7.8164    2.0951    0.0000 O   0  0  0  0  0  0  0  0  0  0  0  0
+    8.5658   -1.3645    0.0000 O   0  0  0  0  0  0  0  0  0  0  0  0
+    2.1893    0.5836    0.0000 O   0  0  0  0  0  0  0  0  0  0  0  0
+    3.1350   -2.3143    0.0000 O   0  0  0  0  0  0  0  0  0  0  0  0
+    5.6940    1.4961    0.0000 N   0  0  0  0  0  0  0  0  0  0  0  0
+    6.1940   -0.0427    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    5.1940   -0.0427    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    6.5030    0.9083    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    4.8850    0.9083    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    7.5184    1.1406    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    6.8790   -0.8275    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    4.5090   -0.8275    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    3.8696    1.1406    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    7.8995   -0.6188    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    3.4885   -0.6188    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    8.2214    0.3719    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    3.1667    0.3719    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    2.8223   -1.3645    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    8.7921    2.3143    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    9.5447   -1.1604    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    5.6940    2.1161    0.0000 H   0  0  0  0  0  0  0  0  0  0  0  0
+    6.6806   -1.4149    0.0000 H   0  0  0  0  0  0  0  0  0  0  0  0
+    4.7074   -1.4149    0.0000 H   0  0  0  0  0  0  0  0  0  0  0  0
+    3.6848    1.7324    0.0000 H   0  0  0  0  0  0  0  0  0  0  0  0
+    8.8273    0.5031    0.0000 H   0  0  0  0  0  0  0  0  0  0  0  0
+    2.2153   -1.2379    0.0000 H   0  0  0  0  0  0  0  0  0  0  0  0
+    2.0000    1.1740    0.0000 H   0  0  0  0  0  0  0  0  0  0  0  0
+    8.9280    1.7094    0.0000 H   0  0  0  0  0  0  0  0  0  0  0  0
+    9.3970    2.4502    0.0000 H   0  0  0  0  0  0  0  0  0  0  0  0
+    8.6562    2.9193    0.0000 H   0  0  0  0  0  0  0  0  0  0  0  0
+    9.6713   -1.7673    0.0000 H   0  0  0  0  0  0  0  0  0  0  0  0
+   10.1516   -1.0338    0.0000 H   0  0  0  0  0  0  0  0  0  0  0  0
+    9.4181   -0.5534    0.0000 H   0  0  0  0  0  0  0  0  0  0  0  0
+  1 10  1  0  0  0  0
+  1 19  1  0  0  0  0
+  2 14  1  0  0  0  0
+  2 20  1  0  0  0  0
+  3 17  1  0  0  0  0
+  3 27  1  0  0  0  0
+  4 18  2  0  0  0  0
+  5  8  1  0  0  0  0
+  5  9  1  0  0  0  0
+  5 21  1  0  0  0  0
+  6  7  1  0  0  0  0
+  6  8  2  0  0  0  0
+  6 11  1  0  0  0  0
+  7  9  2  0  0  0  0
+  7 12  1  0  0  0  0
+  8 10  1  0  0  0  0
+  9 13  1  0  0  0  0
+ 10 16  2  0  0  0  0
+ 11 14  2  0  0  0  0
+ 11 22  1  0  0  0  0
+ 12 15  2  0  0  0  0
+ 12 23  1  0  0  0  0
+ 13 17  2  0  0  0  0
+ 13 24  1  0  0  0  0
+ 14 16  1  0  0  0  0
+ 15 17  1  0  0  0  0
+ 15 18  1  0  0  0  0
+ 16 25  1  0  0  0  0
+ 18 26  1  0  0  0  0
+ 19 28  1  0  0  0  0
+ 19 29  1  0  0  0  0
+ 19 30  1  0  0  0  0
+ 20 31  1  0  0  0  0
+ 20 32  1  0  0  0  0
+ 20 33  1  0  0  0  0
+M  END
+> <PUBCHEM_COMPOUND_CID>
+5315949
+
+> <PUBCHEM_COMPOUND_CANONICALIZED>
+1
+
+> <PUBCHEM_CACTVS_COMPLEXITY>
+364
+
+> <PUBCHEM_CACTVS_HBOND_ACCEPTOR>
+4
+
+> <PUBCHEM_CACTVS_HBOND_DONOR>
+2
+
+> <PUBCHEM_CACTVS_ROTATABLE_BOND>
+3
+
+> <PUBCHEM_CACTVS_SUBSKEYS>
+AAADccByOAAAAAAAAAAAAAAAAAAAAWAAAAAwYAAAAAAAAFgB/AAAHgAQCAAADAyhngIyxvLJlgCoAyxyxASCiCAlYiAAmSE3bNgOJ/bGtZuFcWhn8B3Y+Ye4+f+eqEADCgAKEABQgAYUABQgAAAAAAAAAA==
+
+> <PUBCHEM_IUPAC_OPENEYE_NAME>
+2-hydroxy-6,8-dimethoxy-9H-carbazole-3-carbaldehyde
+
+> <PUBCHEM_IUPAC_CAS_NAME>
+2-hydroxy-6,8-dimethoxy-9H-carbazole-3-carboxaldehyde
+
+> <PUBCHEM_IUPAC_NAME_MARKUP>
+2-hydroxy-6,8-dimethoxy-9<I>H</I>-carbazole-3-carbaldehyde
+
+> <PUBCHEM_IUPAC_NAME>
+2-hydroxy-6,8-dimethoxy-9H-carbazole-3-carbaldehyde
+
+> <PUBCHEM_IUPAC_SYSTEMATIC_NAME>
+6,8-dimethoxy-2-oxidanyl-9H-carbazole-3-carbaldehyde
+
+> <PUBCHEM_IUPAC_TRADITIONAL_NAME>
+2-hydroxy-6,8-dimethoxy-9H-carbazole-3-carbaldehyde
+
+> <PUBCHEM_IUPAC_INCHI>
+InChI=1S/C15H13NO4/c1-19-9-4-11-10-3-8(7-17)13(18)6-12(10)16-15(11)14(5-9)20-2/h3-7,16,18H,1-2H3
+
+> <PUBCHEM_IUPAC_INCHIKEY>
+MIFULDKBOSMXIS-UHFFFAOYSA-N
+
+> <PUBCHEM_XLOGP3_AA>
+3
+
+> <PUBCHEM_EXACT_MASS>
+271.08445790
+
+> <PUBCHEM_MOLECULAR_FORMULA>
+C15H13NO4
+
+> <PUBCHEM_MOLECULAR_WEIGHT>
+271.27
+
+> <PUBCHEM_SMILES>
+COC1=CC2=C(C(=C1)OC)NC3=C2C=C(C(=C3)O)C=O
+
+> <PUBCHEM_CONNECTIVITY_SMILES>
+COC1=CC2=C(C(=C1)OC)NC3=C2C=C(C(=C3)O)C=O
+
+> <PUBCHEM_CACTVS_TPSA>
+71.6
+
+> <PUBCHEM_MONOISOTOPIC_WEIGHT>
+271.08445790
+
+> <PUBCHEM_TOTAL_CHARGE>
+0
+
+> <PUBCHEM_HEAVY_ATOM_COUNT>
+20
+
+> <PUBCHEM_ATOM_DEF_STEREO_COUNT>
+0
+
+> <PUBCHEM_ATOM_UDEF_STEREO_COUNT>
+0
+
+> <PUBCHEM_BOND_DEF_STEREO_COUNT>
+0
+
+> <PUBCHEM_BOND_UDEF_STEREO_COUNT>
+0
+
+> <PUBCHEM_ISOTOPIC_ATOM_COUNT>
+0
+
+> <PUBCHEM_COMPONENT_COUNT>
+1
+
+> <PUBCHEM_CACTVS_TAUTO_COUNT>
+-1
+
+> <PUBCHEM_COORDINATE_TYPE>
+1
+5
+255
+
+> <PUBCHEM_BONDANNOTATIONS>
+10  16  8
+11  14  8
+12  15  8
+13  17  8
+14  16  8
+15  17  8
+5  8  8
+5  9  8
+6  11  8
+6  7  8
+6  8  8
+7  12  8
+7  9  8
+8  10  8
+9  13  8
+
+$$$$
