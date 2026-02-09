@@ -2,8 +2,11 @@ services:
   - type: web
     name: spiceschemdb-1
     env: python
-    runtime: python
-    runtimeVersion: 3.11.9
     plan: free
+
     buildCommand: pip install --upgrade pip setuptools wheel && pip install -r requirements.txt
     startCommand: gunicorn app:app
+
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.11.9
