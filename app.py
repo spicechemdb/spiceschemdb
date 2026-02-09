@@ -843,6 +843,10 @@ def admin_download_missing_structures():
 
     return jsonify({"downloaded": done, "requested": limit})
 
+@app.route("/contact")
+def contact():
+    return render_template("contact.html")
+
 
 # -------------------------
 # Error Page
