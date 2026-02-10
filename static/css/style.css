@@ -8,20 +8,25 @@
     border: 1px solid #e0e0e0;
     box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
     transition: transform 0.2s ease;
+    height: 100%;              /* Makes all cards equal height */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
 }
 
 .glass-card:hover {
     transform: translateY(-4px);
 }
 
-/* Full image style */
+/* Main + Team image style (uniform height) */
 .contact-img-full {
     width: 100%;
-    max-height: 350px;
+    height: 280px;            /* Fixed height for all */
     object-fit: cover;
     border-radius: 12px;
 }
 
+/* Optional smaller variant (if ever needed) */
 .contact-img-small-full {
     width: 100%;
     height: 180px;
