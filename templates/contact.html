@@ -8,10 +8,12 @@
         For research collaborations, database queries, or academic communication.
     </p>
 
-    <!-- ===== PRIMARY CONTACT ===== -->
-    <div class="row justify-content-center mb-5">
-        <div class="col-md-6">
-            <div class="glass-card p-4 text-center">
+    <!-- ===== PRIMARY CONTACTS ===== -->
+    <div class="row justify-content-center mb-5 g-4">
+
+        <!-- Dr. Jino -->
+        <div class="col-md-6 col-lg-5">
+            <div class="glass-card p-4 text-center h-100">
                 
                 <img src="{{ url_for('static', filename='images/jino.jpg') }}" 
                      class="img-fluid contact-img-full mb-3">
@@ -25,26 +27,46 @@
 
                 <p class="mb-0">
                     <strong>Email:</strong><br>
-                    <a href="mailto:jinoblessy@sret.edu.in">
-                        jinoblessy@sret.edu.in
-                    </a><br>
-                    <a href="mailto:jinoblessy@sriramachandra.edu.in">
-                        jinoblessy@sriramachandra.edu.in
-                    </a><br>
-                    <a href="mailto:blessyjino@gmail.com">
-                        blessyjino@gmail.com
+                    <a href="mailto:jinoblessy@sret.edu.in">jinoblessy@sret.edu.in</a><br>
+                    <a href="mailto:jinoblessy@sriramachandra.edu.in">jinoblessy@sriramachandra.edu.in</a><br>
+                    <a href="mailto:blessyjino@gmail.com">blessyjino@gmail.com</a>
+                </p>
+
+            </div>
+        </div>
+
+        <!-- Ms. Premavathi -->
+        <div class="col-md-6 col-lg-5">
+            <div class="glass-card p-4 text-center h-100">
+                
+                <!-- Add image if available -->
+                <!-- <img src="{{ url_for('static', filename='images/premavathi.jpg') }}" 
+                     class="img-fluid contact-img-full mb-3"> -->
+
+                <h4 class="fw-bold">Ms. Premavathi M</h4>
+                <p class="mb-1">Senior System Administrator</p>
+                <p class="mb-1">Department of Bioinformatics</p>
+                <p class="mb-3">
+                    Sri Ramachandra Institute of Higher Education and Research
+                </p>
+
+                <p class="mb-0">
+                    <strong>Email:</strong><br>
+                    <a href="mailto:premavathim@sret.edu.in">
+                        premavathim@sret.edu.in
                     </a>
                 </p>
 
             </div>
         </div>
+
     </div>
 
     <!-- ===== TEAM MEMBERS ===== -->
-    <div class="row row-cols-1 row-cols-md-4 g-4">
+    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4">
 
         <div class="col">
-            <div class="glass-card p-3 text-center">
+            <div class="glass-card p-3 text-center h-100">
                 <img src="{{ url_for('static', filename='images/dharshan.jpg') }}" 
                      class="img-fluid contact-img-full mb-3">
                 <h6 class="fw-bold">Dharshan A</h6>
@@ -58,15 +80,13 @@
                 </p>
                 <p class="mb-0">
                     <strong>Email:</strong><br>
-                    <a href="mailto:481rshan@gmail.com">
-                        481rshan@gmail.com
-                    </a>
+                    <a href="mailto:481rshan@gmail.com">481rshan@gmail.com</a>
                 </p>
             </div>
         </div>
 
         <div class="col">
-            <div class="glass-card p-3 text-center">
+            <div class="glass-card p-3 text-center h-100">
                 <img src="{{ url_for('static', filename='images/srihari.jpg') }}" 
                      class="img-fluid contact-img-full mb-3">
                 <h6 class="fw-bold">Sri Hariharan N</h6>
@@ -88,7 +108,7 @@
         </div>
 
         <div class="col">
-            <div class="glass-card p-3 text-center">
+            <div class="glass-card p-3 text-center h-100">
                 <img src="{{ url_for('static', filename='images/darshini.jpg') }}" 
                      class="img-fluid contact-img-full mb-3">
                 <h6 class="fw-bold">Darshini B</h6>
@@ -110,7 +130,7 @@
         </div>
 
         <div class="col">
-            <div class="glass-card p-3 text-center">
+            <div class="glass-card p-3 text-center h-100">
                 <img src="{{ url_for('static', filename='images/harsha.jpg') }}" 
                      class="img-fluid contact-img-full mb-3">
                 <h6 class="fw-bold">Harshavardhan Anandalakshmanan</h6>
